@@ -1,0 +1,307 @@
+@import "./variable";
+.navbar{
+    background: $my-color;
+    .navbar-toggler{
+        background: white;
+    }
+    .logo{
+        .navbar-brand{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                &.active{
+                    color: yellow;
+                }
+                color: white;
+                padding-right: 40px;
+            }
+            .nav-link:hover{
+                color: yellow;
+            }
+        }
+    }
+}
+.banner{
+    background: $my-color;
+    .welcome-title{
+        font-size: 50px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-weight: bolder;
+    }
+    .welcome-side-title{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .welcome-paragraph{
+        padding-bottom: 20px;
+    }
+    .welcome-btn{
+        border-radius: 0;
+        width: 150px;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .welcome-btn:hover{
+        color: white;
+        border-radius: 0;
+        background: red;
+    }
+}
+.main-hosting{
+    .hosting-title{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .hosting-paragraph{
+        padding-top: 50px;
+    }
+    .hosting-button{
+        padding-top: 50px;
+        padding-bottom: 60px;
+        .hosting-btn{
+            border-radius: 0;
+            width: 150px;
+            font-size: 15px;
+        }
+        .hosting-btn:hover{
+            color: white;
+            background: red;
+        }
+    }
+}
+.main-services{
+    background: $my-color;
+    .services-title{
+        padding-top: 60px;
+    }
+    .services-all{
+        display: flex;
+        justify-content: space-around;
+        .services{
+            border: 1px solid yellow;
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            margin: 20px;
+            cursor: pointer;
+            .logo-services{
+                background: white;
+                padding: 20px;
+                border-radius: 40%;
+            }
+            .logo-services:hover{
+                background: #DDDDDD;
+                transition: .3s ease-in;
+            }
+        }
+        .services:hover{
+            background: #8308EB;
+            transition: .3s ease-in;
+        }
+    }
+    .services-button{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .services-btn{
+            width: 150px;
+            border-radius: 0;
+            font-size: 15px;
+
+        }
+        .services-btn:hover{
+            color: white;
+            background: #8308EB;
+        }
+    }
+}
+.main-support{
+    .support-headings{
+        padding-top: 40px;
+        .support-heading-title{
+            padding-bottom: 20px;
+        }
+        .support-heading-paragraph{
+            padding-bottom: 40px;
+        }
+    }
+    .support-all{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .support{
+            border: 2px solid #F0F0F0;
+            height: 350px;
+            border-radius: 10%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            .support-logo{
+                padding-top: 20px;
+            }
+            .support-title{
+                padding-top: 10px;
+            }
+            .support-paragraph{
+                padding-top: 10px;
+            }
+        }
+        .support:hover{
+            transform: scale(1.1);
+            transition: .3s ease-in-out;
+        }
+        .support-button{
+            .support-button-design{
+                border-radius: 0;
+                width: 150px;
+                color: white;
+                background: red;
+                font-size: 15px;
+            }
+            .support-button-design:hover{
+                color: white;
+                background: #8308EB;
+            }
+        }
+    }
+}
+
+.contact-demo-main{
+    .contact-demo-all{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        .form-design{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            background: #0C0F38;
+            width: 450px;
+            height: 400px;
+            border-radius: 30px;
+            margin-bottom: -200px;
+            .begin-contact{
+                padding-top: 50px;
+            }
+            .form-group{
+                .form-control{
+                    width:100%;
+                    border-radius: 10px;
+                }
+                .messege{
+                    border-radius: 10px;
+                    outline: 0;
+                }
+            }
+        }
+            .contact-btn{
+                width: 150px;
+                border-radius: 30px;
+            }
+    }
+    .contact-service{
+        color: #F0F0F0;
+        background: #0C0F38;
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+        .contact-title{
+            padding-top: 30px;
+        }
+    }
+}
+@media only screen  and (min-width: 1200px){
+    .banner{
+        background: $my-color;
+        height: 550px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .banner{
+        background: $my-color;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .welcome-title{
+            width: 70%;
+        }
+        .welcome-img{
+            width: 60%;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .contact-demo-main{
+        .contact-demo-all{
+            display: flex;
+            justify-content: center;
+            .form-design{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .begin-contact{
+                    padding-top: 30px;
+                }
+                .contact-form{
+                    padding-left: 30px;
+                }
+                .form-group{
+                    align-items: center;
+                    .form-control{
+                        width: 88%;
+                        border-radius: 10px;
+                        padding-left: 10px;
+                    } 
+                    .messege{
+                        border-radius: 10px;
+                        outline: 0;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .main-support{
+        .support-all{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .support{
+                border: 2px solid #F0F0F0;
+                height: 460px;
+                border-radius: 10%;
+                margin-bottom: 30px;
+                margin-top: 30px;
+                .support-logo{
+                    padding-top: 20px;
+                }
+                .support-title{
+                    padding-top: 10px;
+                }
+                .support-paragraph{
+                    padding-top: 10px;
+                }
+            }
+            .support:hover{
+                transform: scale(1.1);
+                transition: .3s ease-in-out;
+            }
+            .support-button{
+                .support-button-design{
+                    border-radius: 0;
+                    width: 150px;
+                    color: white;
+                    background: red;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+

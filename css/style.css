@@ -1,0 +1,290 @@
+.navbar {
+  background: #0C0F38;
+}
+.navbar .navbar-toggler {
+  background: white;
+}
+.navbar .logo .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.navbar .logo .navbar-brand:hover {
+  color: white;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: white;
+  padding-right: 40px;
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: yellow;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: yellow;
+}
+
+.banner {
+  background: #0C0F38;
+}
+.banner .welcome-title {
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+.banner .welcome-side-title {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.banner .welcome-paragraph {
+  padding-bottom: 20px;
+}
+.banner .welcome-btn {
+  border-radius: 0;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.banner .welcome-btn:hover {
+  color: white;
+  border-radius: 0;
+  background: red;
+}
+
+.main-hosting .hosting-title {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.main-hosting .hosting-paragraph {
+  padding-top: 50px;
+}
+.main-hosting .hosting-button {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.main-hosting .hosting-button .hosting-btn {
+  border-radius: 0;
+  width: 150px;
+  font-size: 15px;
+}
+.main-hosting .hosting-button .hosting-btn:hover {
+  color: white;
+  background: red;
+}
+
+.main-services {
+  background: #0C0F38;
+}
+.main-services .services-title {
+  padding-top: 60px;
+}
+.main-services .services-all {
+  display: flex;
+  justify-content: space-around;
+}
+.main-services .services-all .services {
+  border: 1px solid yellow;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+.main-services .services-all .services .logo-services {
+  background: white;
+  padding: 20px;
+  border-radius: 40%;
+}
+.main-services .services-all .services .logo-services:hover {
+  background: #DDDDDD;
+  transition: 0.3s ease-in;
+}
+.main-services .services-all .services:hover {
+  background: #8308EB;
+  transition: 0.3s ease-in;
+}
+.main-services .services-button {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main-services .services-button .services-btn {
+  width: 150px;
+  border-radius: 0;
+  font-size: 15px;
+}
+.main-services .services-button .services-btn:hover {
+  color: white;
+  background: #8308EB;
+}
+
+.main-support .support-headings {
+  padding-top: 40px;
+}
+.main-support .support-headings .support-heading-title {
+  padding-bottom: 20px;
+}
+.main-support .support-headings .support-heading-paragraph {
+  padding-bottom: 40px;
+}
+.main-support .support-all {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main-support .support-all .support {
+  border: 2px solid #F0F0F0;
+  height: 350px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.main-support .support-all .support .support-logo {
+  padding-top: 20px;
+}
+.main-support .support-all .support .support-title {
+  padding-top: 10px;
+}
+.main-support .support-all .support .support-paragraph {
+  padding-top: 10px;
+}
+.main-support .support-all .support:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.main-support .support-all .support-button .support-button-design {
+  border-radius: 0;
+  width: 150px;
+  color: white;
+  background: red;
+  font-size: 15px;
+}
+.main-support .support-all .support-button .support-button-design:hover {
+  color: white;
+  background: #8308EB;
+}
+
+.contact-demo-main .contact-demo-all {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.contact-demo-main .contact-demo-all .form-design {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  background: #0C0F38;
+  width: 450px;
+  height: 400px;
+  border-radius: 30px;
+  margin-bottom: -200px;
+}
+.contact-demo-main .contact-demo-all .form-design .begin-contact {
+  padding-top: 50px;
+}
+.contact-demo-main .contact-demo-all .form-design .form-group .form-control {
+  width: 100%;
+  border-radius: 10px;
+}
+.contact-demo-main .contact-demo-all .form-design .form-group .messege {
+  border-radius: 10px;
+  outline: 0;
+}
+.contact-demo-main .contact-demo-all .contact-btn {
+  width: 150px;
+  border-radius: 30px;
+}
+.contact-demo-main .contact-service {
+  color: #F0F0F0;
+  background: #0C0F38;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+.contact-demo-main .contact-service .contact-title {
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner {
+    background: #0C0F38;
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner {
+    background: #0C0F38;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .banner .welcome-title {
+    width: 70%;
+  }
+  .banner .welcome-img {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact-demo-main .contact-demo-all {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-demo-main .contact-demo-all .form-design {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contact-demo-main .contact-demo-all .form-design .begin-contact {
+    padding-top: 30px;
+  }
+  .contact-demo-main .contact-demo-all .form-design .contact-form {
+    padding-left: 30px;
+  }
+  .contact-demo-main .contact-demo-all .form-design .form-group {
+    align-items: center;
+  }
+  .contact-demo-main .contact-demo-all .form-design .form-group .form-control {
+    width: 88%;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  .contact-demo-main .contact-demo-all .form-design .form-group .messege {
+    border-radius: 10px;
+    outline: 0;
+    width: 80%;
+  }
+
+  .main-support .support-all {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main-support .support-all .support {
+    border: 2px solid #F0F0F0;
+    height: 460px;
+    border-radius: 10%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .main-support .support-all .support .support-logo {
+    padding-top: 20px;
+  }
+  .main-support .support-all .support .support-title {
+    padding-top: 10px;
+  }
+  .main-support .support-all .support .support-paragraph {
+    padding-top: 10px;
+  }
+  .main-support .support-all .support:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+  .main-support .support-all .support-button .support-button-design {
+    border-radius: 0;
+    width: 150px;
+    color: white;
+    background: red;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
